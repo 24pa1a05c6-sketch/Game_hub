@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHub Checkout</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+  <h1>GameHub</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Store</a>
+    <a href="library.html">Library</a>
+    <a href="cart.html">Cart <span id="cart-count">0</span></a>
+    <a href="wishlist.html">Wishlist <span id="wishlist-count">0</span></a>
+  </nav>
+</header>
+
+  <main>
+    <div class="layout-shell">
+      <aside class="sidebar">
+        <div class="side-section-label">Navigation</div>
+        <a href="index.html" class="side-link"><span>Home</span></a>
+        <a href="shop.html" class="side-link"><span>Store</span></a>
+        <a href="wishlist.html" class="side-link"><span>Wishlist</span></a>
+        <a href="cart.html" class="side-link"><span>Cart</span></a>
+      </aside>
+
+      <section class="content">
+        <h2>Checkout</h2>
+
+        <div class="checkout-card">
+          <h2>Payment details</h2>
+          <div class="form-group">
+            <div class="form-field">
+              <label for="name">Name on card</label>
+              <input id="name" type="text" placeholder="Kota Jaswanth" />
+            </div>
+            <div class="form-field">
+              <label for="card">Card number</label>
+              <input id="card" type="text" placeholder="1234 5678 9012 3456" />
+            </div>
+            <div class="form-field">
+              <label for="exp">Expiry</label>
+              <input id="exp" type="text" placeholder="MM/YY" />
+            </div>
+            <div class="form-field">
+              <label for="cvv">CVV</label>
+              <input id="cvv" type="password" placeholder="***" />
+            </div>
+          </div>
+
+          <button id="complete-checkout">Complete purchase</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/header.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

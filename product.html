@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHub – Game Details</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+  <h1>GameHub</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Store</a>
+    <a href="library.html">Library</a>
+    <a href="cart.html">Cart <span id="cart-count">0</span></a>
+    <a href="wishlist.html">Wishlist <span id="wishlist-count">0</span></a>
+  </nav>
+</header>
+
+
+  <main>
+    <div class="layout-shell">
+      <aside class="sidebar">
+        <div class="side-section-label">Navigation</div>
+        <a href="index.html" class="side-link"><span>Home</span></a>
+        <a href="shop.html" class="side-link"><span>Store</span></a>
+        <a href="wishlist.html" class="side-link"><span>Wishlist</span></a>
+        <a href="cart.html" class="side-link"><span>Cart</span></a>
+      </aside>
+
+      <section class="content">
+        <h2>Game details</h2>
+
+        <div id="product-card" class="product-card">
+          <!-- filled by JS -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>

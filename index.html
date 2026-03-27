@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+  <h1>GameHub</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Store</a>
+    <a href="library.html">Library</a>
+    <a href="cart.html">Cart <span id="cart-count">0</span></a>
+    <a href="wishlist.html">Wishlist <span id="wishlist-count">0</span></a>
+  </nav>
+</header>
+
+
+  <main>
+    <!-- HERO PANEL -->
+    <section class="hero-panel">
+      <div class="hero-left">
+        <h2 class="hero-heading">Your all‑in‑one game hub.</h2>
+        <p class="hero-sub">
+          Discover, buy and track your favorite titles in a single neon‑charged launcher experience.
+        </p>
+        <div class="hero-actions">
+          <a href="shop.html" class="hero-btn hero-btn-primary">Browse store</a>
+          <a href="wishlist.html" class="hero-btn hero-btn-ghost">Wishlist</a>
+        </div>
+        <div class="hero-metrics">
+          <span>50+ curated titles</span>
+          <span>Instant cart & wishlist</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="hero-pill">Featured today</span>
+            <span class="hero-status-dot"></span>
+          </div>
+          <div class="hero-card-body">
+            <h3>Top deals & new drops</h3>
+            <p>Handpicked RPG, FPS and open‑world titles with active discounts.</p>
+            <div class="hero-card-meta">
+              <span>⚡ Live flash sale</span>
+              <span>⭐ High rated picks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2>Featured Games</h2>
+
+    <input type="text" id="search-bar" placeholder="Search featured games..." />
+
+    <div id="featured-games" class="games-container">
+      <!-- Featured games rendered dynamically -->
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
